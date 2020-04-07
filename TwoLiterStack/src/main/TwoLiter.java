@@ -47,7 +47,7 @@ public class TwoLiter {
 //		Random r = new Random(42);
 		Random r = new Random();
 		for (int i = 0; i < count; i++) {
-			// How bout we go WITHOUT the length -1
+			// How bout we go WITHOUT the "length -1" part
 			twoLiterStack.add(new TwoLiter(UPCs[r.nextInt(UPCs.length)], 
 					                       flavors[r.nextInt(flavors.length)], 
 					                       1.00 + r.nextFloat()));
