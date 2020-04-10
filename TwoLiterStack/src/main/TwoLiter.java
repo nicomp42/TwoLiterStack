@@ -2,6 +2,16 @@
  * Bill Nicholson
  * nicholdw@ucmail.uc.edu
  */
+/*
+ * Edits By: Travis Newberry
+ * Newberts@mail.uc.edu
+ * Assignment09
+ * 4/12/2020
+ * 34IT2045C
+ * A fix to the problem of there being no Dr. Pepper on the stack
+ * Citations: Bill Nicholson's code
+ * Extra Notes: NA
+ */
 package main;
 
 import java.util.Random;
@@ -47,8 +57,8 @@ public class TwoLiter {
 //		Random r = new Random(42);
 		Random r = new Random();
 		for (int i = 0; i < count; i++) {
-			twoLiterStack.add(new TwoLiter(UPCs[r.nextInt(UPCs.length - 1)], 
-					                       flavors[r.nextInt(flavors.length - 1)], 
+			twoLiterStack.add(new TwoLiter(UPCs[r.nextInt(UPCs.length -1)], 
+					                       flavors[r.nextInt(flavors.length)], 
 					                       1.00 + r.nextFloat()));
 		}
 	}
