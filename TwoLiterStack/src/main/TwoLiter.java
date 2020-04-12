@@ -1,6 +1,11 @@
-/*
- * Bill Nicholson
- * nicholdw@ucmail.uc.edu
+/* 
+Name: Andrew Glanz
+Date: 12 April 2020
+Assignment: Assignment 09
+Email: glanzad@mail.uc.edu
+Desc: Debugging
+Citations: N/A
+Comments: N/A
  */
 package main;
 
