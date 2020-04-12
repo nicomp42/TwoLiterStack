@@ -48,7 +48,7 @@ public class TwoLiter {
 		Random r = new Random();
 		for (int i = 0; i < count; i++) {
 			twoLiterStack.add(new TwoLiter(UPCs[r.nextInt(UPCs.length - 1)], 
-					                       flavors[r.nextInt(flavors.length - 1)], 
+					                       flavors[r.nextInt(flavors.length)], // removing the -1 from flavors.length fixed the issue. it was ignoring Dr. Pepper as an element because it was the last element in the array of Strings.
 					                       1.00 + r.nextFloat()));
 		}
 	}
