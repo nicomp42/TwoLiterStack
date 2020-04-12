@@ -4,7 +4,7 @@
  * Course: IT2045C
  * Assignment #: 09
  * Citations: N/A
- * Anything Else: N/A
+ * Anything Else: N/a
  */
 package main;
 
