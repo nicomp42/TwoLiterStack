@@ -1,6 +1,7 @@
 /*
  * Bill Nicholson
  * nicholdw@ucmail.uc.edu
+ * edited by Adam Bockhorst
  */
 package main;
 
