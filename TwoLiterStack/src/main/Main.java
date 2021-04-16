@@ -7,6 +7,8 @@ package main;
 import java.text.DecimalFormat;
 import java.util.Stack;
 
+import main.TwoLiter;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -28,13 +30,16 @@ public class Main {
 		
 		// ToDo Print the total price to exactly two decimal places.
 		// ToDo in the comments here, explain why this number changes each time you run the program.
+		// The number changes because there is a random number of soda's being put in
 	    DecimalFormat df2 = new DecimalFormat("#.##");
 		System.out.println("Total Price is $" + df2.format(totalPrice));
 		
 		// ToDo Compute the number of Dr. Pepper 2-liters in the stack
 		int totalDrPepper = 0;
 		for (TwoLiter twoLiter : twoLiterStack) {
-			if (twoLiter.getFlavor().equals("Dr. Pepper")) {totalDrPepper++;}
+			if (twoLiter.getFlavor().equals("Cherry Coke")) {
+				totalDrPepper++;
+				}
 		}		
 		System.out.println("Total Dr. Pepper = " + totalDrPepper);
 	}
