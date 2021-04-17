@@ -43,12 +43,20 @@ public class TwoLiter {
 	 * @param twoLiterStack The Stack
 	 * @param count The number of TwoLiter objects to add
 	 */
+/*
+EDIT:
+Random.nextInt(int n) generates a random number in the range 0(inclusive) to n(exclusive). 
+We want to generate index for arrays flavors and UPCs randomly. So we need indexes from
+0 to flavors.length-1 (both inclusive). So for upper bound we will have to add 1 to the upper bound
+and the pass this to nextInt() method. So, correct call should be nextInt(flavors.length), then only it 
+will generate number from 0 to flavors.length-1 (both inclusive).
+*/
 	public static void add(Stack<TwoLiter> twoLiterStack, int count ) {
 //		Random r = new Random(42);
 		Random r = new Random();
 		for (int i = 0; i < count; i++) {
-			twoLiterStack.add(new TwoLiter(UPCs[r.nextInt(UPCs.length - 1)], 
-					                       flavors[r.nextInt(flavors.length - 1)], 
+			twoLiterStack.add(new TwoLiter(UPCs[r.nextInt(UPCs.length )], 
+					                       flavors[r.nextInt(flavors.length)], 
 					                       1.00 + r.nextFloat()));
 		}
 	}
