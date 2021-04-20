@@ -2,7 +2,7 @@
  * Bill Nicholson
  * nicholdw@ucmail.uc.edu
  */
-package main;
+package src.main;
 
 import java.text.DecimalFormat;
 import java.util.Stack;
