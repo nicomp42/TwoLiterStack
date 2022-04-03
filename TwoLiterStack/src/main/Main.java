@@ -33,9 +33,11 @@ public class Main {
 		
 		// ToDo Compute the number of Dr. Pepper 2-liters in the stack
 		int totalDrPepper = 0;
+		
 		for (TwoLiter twoLiter : twoLiterStack) {
 			if (twoLiter.getFlavor().equals("Dr. Pepper")) {totalDrPepper++;}
 		}		
 		System.out.println("Total Dr. Pepper = " + totalDrPepper);
+		
 	}
 }
