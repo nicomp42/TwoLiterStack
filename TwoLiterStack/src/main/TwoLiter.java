@@ -10,7 +10,7 @@ package src.main;
 
 import java.util.Random;
 import java.util.Stack;
-
+// 
 /**
  * Model a 2-liter of soda in a grocery store
  * @author nicomp
