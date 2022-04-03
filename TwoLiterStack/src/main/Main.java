@@ -1,6 +1,10 @@
 /*
- * Bill Nicholson
- * nicholdw@ucmail.uc.edu
+ * Charlie Hayes
+ * hayesc9@mail.uc.edu
+ * Assignment 10
+ * IT2045C Spring 2022
+ * Due: 4/3/2022
+ * This program creates a stack with two liter bottles of soda and prints the total price and amount of dr. pepper in the stack
  */
 package main;
 
@@ -37,5 +41,6 @@ public class Main {
 			if (twoLiter.getFlavor().equals("Dr. Pepper")) {totalDrPepper++;}
 		}		
 		System.out.println("Total Dr. Pepper = " + totalDrPepper);
+		
 	}
 }
