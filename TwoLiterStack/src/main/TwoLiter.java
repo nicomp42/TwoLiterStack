@@ -1,6 +1,10 @@
 /*
- * Bill Nicholson
- * nicholdw@ucmail.uc.edu
+ * Charlie Hayes
+ * hayesc9@mail.uc.edu
+ * Assignment 10
+ * IT2045C Spring 2022
+ * Due: 4/3/2022
+ * This program creates a stack with two liter bottles of soda and prints the total price and amount of dr. pepper in the stack
  */
 package main;
 
@@ -47,8 +51,8 @@ public class TwoLiter {
 //		Random r = new Random(42);
 		Random r = new Random();
 		for (int i = 0; i < count; i++) {
-			twoLiterStack.add(new TwoLiter(UPCs[r.nextInt(UPCs.length - 1)], 
-					                       flavors[r.nextInt(flavors.length - 1)], 
+			twoLiterStack.add(new TwoLiter(UPCs[r.nextInt(UPCs.length)], //removed the -1 so that the whole string array was being randomized
+					                       flavors[r.nextInt(flavors.length)], 
 					                       1.00 + r.nextFloat()));
 		}
 	}
