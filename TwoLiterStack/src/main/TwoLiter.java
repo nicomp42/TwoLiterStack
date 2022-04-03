@@ -1,8 +1,12 @@
 /*
- * Bill Nicholson
- * nicholdw@ucmail.uc.edu
+ * Professor Bill Nicholsons code, Edited by Joshua Ciulla.
+ * ciullaja@mail.uc.edu	
+ * Assignment #: 10
+ * IT 2045C Spring Semester
+ * This is Professor Bill Nicholsons code, I am just editing the code. I will be fixing the Dr. Pepper problem.
  */
-package main;
+
+package src.main;
 
 import java.util.Random;
 import java.util.Stack;
@@ -13,8 +17,9 @@ import java.util.Stack;
  *
  */
 public class TwoLiter {
-	private static String[] flavors = {"Coke Classic", "Diet Coke",      "Coke Zero",      "New Coke",       "Cherry Coke",     "Caffeine Free Coke", "Dr. Pepper"};
-	private static String[] UPCs =    {"049000050103", "00049000050110", "00049000050141", "xxxxxxxxxxxxxx", " 00049000050165", "00049000006131",     "00078000082463"};
+	private static String[] flavors = {"Coke Classic", "Diet Coke",      "Coke Zero",      "Dr. Pepper",       "Cherry Coke",     "Caffeine Free Coke", "New Coke"};
+	private static String[] UPCs =    {"049000050103", "00049000050110", "00049000050141", "00078000082463", " 00049000050165", "00049000006131",     "0"};
+	// I switched the New Coke that did not have any value to the the back because Dr. Pepper was cut out. So I changed the position of new coke with Dr.Pepper for it to work.
 	private String UPC;
 	private String flavor;
 	private double price;
@@ -44,12 +49,13 @@ public class TwoLiter {
 	 * @param count The number of TwoLiter objects to add
 	 */
 	public static void add(Stack<TwoLiter> twoLiterStack, int count ) {
-//		Random r = new Random(42);
-		Random r = new Random();
+		Random r = new Random(42);
+		Random r1 = new Random();
 		for (int i = 0; i < count; i++) {
-			twoLiterStack.add(new TwoLiter(UPCs[r.nextInt(UPCs.length - 1)], 
-					                       flavors[r.nextInt(flavors.length - 1)], 
-					                       1.00 + r.nextFloat()));
+			twoLiterStack.add(new TwoLiter(UPCs[r1.nextInt(UPCs.length - 1)], 
+					                       flavors[r1.nextInt(flavors.length - 1)], 
+					                       1.00 + r1.nextFloat()));
+		
 		}
 	}
 	/**
@@ -102,3 +108,5 @@ public class TwoLiter {
 		return UPC + ", " + flavor + ", " + price;
 	}
 }
+
+// I edited the code and I switched "New Coke" with no value to Dr.Pepper that has value and now I get output for Dr.Pepper to be added to the stack. I also added a parameter to the class as well to ensure that Dr.Pepper is added to the stack.

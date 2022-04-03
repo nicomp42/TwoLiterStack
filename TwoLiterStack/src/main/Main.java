@@ -1,8 +1,12 @@
 /*
- * Bill Nicholson
- * nicholdw@ucmail.uc.edu
+ * Professor Bill Nicholsons code, Edited by Joshua Ciulla..
+ * ciullaja@mail.uc.edu	
+ * Assignment #: 10
+ * IT 2045C Spring Semester
+ * This is Professor Bill Nicholsons code, I am just editing the code. I will be fixing the Dr. Pepper problem
  */
-package main;
+
+package src.main;
 
 import java.text.DecimalFormat;
 import java.util.Stack;
@@ -10,6 +14,10 @@ import java.util.Stack;
 public class Main {
 
 	public static void main(String[] args) {
+		 
+		
+		Stack<String> myStack = new Stack<String>(); // Adding a paramater to this class and Joshua added this
+		
 		// ToDo Declare and instantiate a TwoLiterStack object
 		Stack<TwoLiter> twoLiterStack = new Stack<TwoLiter>();
 		
@@ -25,7 +33,7 @@ public class Main {
 			totalPrice += twoLiter.getPrice();
 		}
 		
-		
+		//
 		// ToDo Print the total price to exactly two decimal places.
 		// ToDo in the comments here, explain why this number changes each time you run the program.
 	    DecimalFormat df2 = new DecimalFormat("#.##");
@@ -33,9 +41,13 @@ public class Main {
 		
 		// ToDo Compute the number of Dr. Pepper 2-liters in the stack
 		int totalDrPepper = 0;
+		myStack.add("Dr. Pepper"); // Joshua Added this
+		String myPop = myStack.pop(); // Joshua added this
+		
 		for (TwoLiter twoLiter : twoLiterStack) {
 			if (twoLiter.getFlavor().equals("Dr. Pepper")) {totalDrPepper++;}
 		}		
+		
 		System.out.println("Total Dr. Pepper = " + totalDrPepper);
 	}
 }
