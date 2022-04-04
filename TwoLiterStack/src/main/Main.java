@@ -18,7 +18,7 @@ public class Main
 		Stack<TwoLiter> twoLiterStack = new Stack<TwoLiter>();
 		
 		// ToDo Add 100000 items to the stack by calling the add method in the TwoLiter class. Note that the method is static
-		TwoLiter.add(twoLiterStack, 100000);
+		TwoLiter.add(twoLiterStack, 100000); 
 		
 		// ToDo print the number of items in the TwoLiterStack object
 		System.out.println("The stack has " + twoLiterStack.size() + " items in it.");
