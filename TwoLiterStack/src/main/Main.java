@@ -25,7 +25,7 @@ public class Main {
 		TwoLiter.add(twoLiterStack, 100000);
 		
 		// ToDo print the number of items in the TwoLiterStack object
-		System.out.println("The stack has " + twoLiterStack.size() + " items in it.");
+		System.out.println("The stack has " + twoLiterStack.size() + " items in it."); 
 		
 		// ToDo Iterate over the stack and compute the total price of all the items. An enhanced for loop is good here.
 		double totalPrice = 0;
