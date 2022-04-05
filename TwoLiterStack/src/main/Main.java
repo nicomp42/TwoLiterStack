@@ -33,7 +33,6 @@ public class Main {
 			totalPrice += twoLiter.getPrice();
 		}
 		
-		
 		// ToDo Print the total price to exactly two decimal places.
 		// ToDo in the comments here, explain why this number changes each time you run the program.
 	    DecimalFormat df2 = new DecimalFormat("#.##");

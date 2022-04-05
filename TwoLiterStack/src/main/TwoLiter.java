@@ -26,6 +26,7 @@ public class TwoLiter {
 	private String UPC;
 	private String flavor;
 	private double price;
+	
 	/**
 	 * Constructor
 	 * @param UPC  The Universal Product Code that uniquely identifies this type of product
