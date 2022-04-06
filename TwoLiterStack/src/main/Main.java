@@ -15,7 +15,7 @@ package main;
 import java.text.DecimalFormat;
 import java.util.Stack;
 
-public class Main {
+public class Main { 
 
 	public static void main(String[] args) {
 		// ToDo Declare and instantiate a TwoLiterStack object

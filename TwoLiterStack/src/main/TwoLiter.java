@@ -25,7 +25,7 @@ public class TwoLiter {
 	private static String[] UPCs =    {"049000050103", "00049000050110", "00049000050141", "xxxxxxxxxxxxxx", " 00049000050165", "00049000006131",     "00078000082463"};
 	private String UPC;
 	private String flavor;
-	private double price;
+	private double price; 
 	
 	/**
 	 * Constructor
